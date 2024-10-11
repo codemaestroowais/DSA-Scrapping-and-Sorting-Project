@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>765</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="FirstLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>358</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sorting Algorithm:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SortingButton">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>390</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LoadLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>298</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Load data: </string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="LoadDataComboBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>318</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>Read from CSV file</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Scrapping Data</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>298</y>
+      <width>481</width>
+      <height>159</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="SearchBar1"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="SearchBar2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="SearchBar3"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="SearchBar4"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="SearchBar5"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="SearchBar6"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="SearchBar7"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="SelectLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>394</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>No of columns sort:</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>260</y>
+      <width>301</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>460</y>
+      <width>291</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="PauseButton">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>PAUSE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ResumeButton">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RESUME</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="RestartButton">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RESTART</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="StopButton">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>STOP</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="SearchButton">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>308</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>INSPECT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AgainLoadButton">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>338</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Import Data</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="SortingComboBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>378</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <item>
+     <property name="text">
+      <string>BUBBLE SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SELECTION SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>INSERTION SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MERGE SORT </string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>QUICK SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COUNTING SORTt</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RADIX SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BUCKET SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COMB SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GENOME SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>OLD EVEN SORT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="SelectButton_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>418</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sort</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LoadButton_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>340</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Import</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="DataTable">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>691</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>765</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
